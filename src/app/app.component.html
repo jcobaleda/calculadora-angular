@@ -3,12 +3,14 @@
         <div class="col">
             <h1>{{titulo}}</h1>
             <label>Operando A</label>
-            <input type="number" class="form-control">
+            <input type="number" class="form-control" [(ngModel)]="A">
             <br>
             <label>Operando B</label>
-            <input type="number" class="form-control">
+            <input type="number" class="form-control" [(ngModel)]="B">
             <br>
-            <button type="button" class="btn btn-primary">Sumar</button>
+            <button type="button" class="btn btn-primary" (click)="sumarDatos()">Sumar</button>
+            <br>
+            <span>La Suma Es: {{suma}}</span>
         </div>
     </div>
 </div>
